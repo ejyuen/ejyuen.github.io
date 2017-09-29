@@ -1,0 +1,530 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa|Quattrocento+Sans');
+
+@font-face {
+	font-family: 'Josefin Slab';
+}
+
+html {
+  height: 100%;
+}
+:root{
+    --darkblue: RGB(100,160,142);
+		--lightblue: RGB(190,216,211);
+		--lightorange: RGB(253,200,84);
+		--darkorange: RGB(249,150,49);
+		--lightgray: RGB(245,245,245);
+}
+
+body {
+	font-family: 'Josefin Slab', "Century Gothic", Times, sans-serif;
+	font-size: 1.5em;
+	font-style: normal;
+	text-transform: none;
+	margin: 0px 0;
+	overflow-x: hidden;
+	min-height: 100%;
+  	display: flex;
+ 	flex-direction: column;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+a {
+	color: var(--darkblue);
+}
+
+a:hover {
+	text-decoration: none;
+	color: var(--lightorange);
+}
+
+/* ---------------------------------------------- /*
+ * Transition elsements
+/* ---------------------------------------------- */
+
+
+
+
+
+/* ---------------------------------------------- /*
+ * Typography
+/* ---------------------------------------------- */
+
+
+h1, h2, h3, h4, h5, h6 {
+
+	font-family: 700 40px/1.2 'Comfortaa', sans-serif;
+
+	text-transform: capitalize;
+
+	/*text-transform: none;*/
+	letter-spacing: 5px;
+	/*letter-spacing: 0px;*/
+	margin: 5px 0 5px;
+	color: black;
+}
+
+h2 {
+	font-size: 3em;
+	margin: 0 0 30px;
+}
+
+h3 {
+	font-size: 13px;
+	letter-spacing: 1px;
+	margin: 0 0 5px;
+	font-family: "Comfortaa" !important;
+}
+
+h4 {
+	font-size: 12px;
+	letter-spacing: 1px;
+}
+
+h5 {
+	font-size: 12px;
+	letter-spacing: 1px;
+	font-weight: 400;
+}
+
+h6 {
+	font-size: 11px;
+	letter-spacing: 1px;
+	font-weight: 400;
+}
+
+li {
+	font-family: 'Josefin Slab';
+	font-size: 16px;
+}
+
+
+/* ---------------------------------------------- /*
+ * Custom button style
+/* ---------------------------------------------- */
+
+.btn {
+
+	font-family: 'Comfortaa', sans-serif;
+
+	text-transform: capitalize;
+	letter-spacing: 1px;
+	font-size: 1em;
+	padding: 8px 26px;
+	border: 0;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active,
+.btn.active {
+	outline: inherit !important;
+}
+
+/* Button size */
+
+.btn-lg,
+.btn-group-lg > .btn {
+	padding: 10px 25px;
+	font-size: 13px;
+    background: rgba(17, 17, 17, 0.8);
+    color: #fff;
+}
+.btn-lg:hover,
+.btn-group-lg > .btn:hover{
+    background: rgba(17, 17, 17, 1.8);
+    color: #fff;
+}
+
+.btn-sm,
+.btn-group-sm > .btn {
+	padding: 6px 25px;
+	font-size: 11px;
+}
+
+.btn-xs,
+.btn-group-xs > .btn {
+	padding: 5px 25px;
+	font-size: 10px;
+}
+
+.spotted-btn {
+	background-color: var(--darkblue);
+	color: white;
+	font-family: 'Comfortaa';
+	font-weight: bold;
+  text-transform: capitalize !important;
+}
+
+.spotted-btn:hover {
+  background-color: var(--lightorange);
+  color: white !important;
+	font-weight: bold;
+}
+
+
+/* ---------------------------------------------- /*
+ * General Styles
+/* ---------------------------------------------- */
+
+.section-chunk {
+	padding: 120px 0 100px;
+
+}
+
+
+
+.section-chunk-gray {
+	background: var(--lightgray);
+}
+
+#home-top .section-chunk-title{
+	font-size: 6em;
+	font-family: 'Comfortaa', sans-serif;
+	text-transform: lowercase;
+	letter-spacing: 3px;
+	font-weight: 700;
+	height: 20px; /* you can use % */
+  margin-top : 0px;
+  width: auto;
+  color: #A36C9C;
+  text-align: center;
+}
+
+
+
+.section-chunk-header {
+	text-align: center;
+	margin: 0 0 60px;
+}
+
+.section-chunk-header-left {
+	text-align: left;
+}
+
+.section-chunk-header-left .section-chunk-line {
+	width: inherit;
+	margin: 30px 0;
+
+}
+
+.section-chunk-title{
+    font-weight: 200;
+    color: white;
+
+
+}
+
+.section-chunk-subtitle {
+	font-family:  "Josefin Slab", Times, sans-serif;
+	font-style: normal;
+	font-size: 18px;
+}
+
+.section-chunk-line {
+	background: rgba(135, 135, 135, 0.5);
+	width: 100px;
+	height: 1px;
+	margin: 30px auto;
+}
+
+.section-chunk-icon {
+	font-size: 32px;
+}
+
+/* ---------------------------------------------- /*
+ * Home
+/* ---------------------------------------------- */
+
+#home {
+	/*background: url('../images/background.gif');*/
+	background-color: #f2f5df;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	-webkit-background-size: cover;
+	   -moz-background-size: cover;
+		 -o-background-size: cover;
+			background-size: cover;
+	/*margin-top: -15px;*/
+	padding: 0;
+	background-size: contain;
+
+
+}
+
+#home-top{
+	overflow: hidden;
+
+	position: relative;
+	/*height:100vh;*/
+	flex:1;
+
+
+}
+.petImg{
+	position: absolute;
+	user-select: none;
+	-webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    -webkit-user-drag: none;
+    -moz-user-drag: none;
+    -ms-user-drag: none;
+    user-drag: none;
+
+
+}
+
+#petImg1{
+	float: left;
+	-ms-transform:  translate(900px, -50px) rotate(-10deg) scale(1.0, 1.0); /* IE 9 */
+    -webkit-transform:  translate(900px, -50px) rotate(-10deg) scale(1.0, 1.0); /* Chrome, Safari, Opera */
+    transform:  translate(900px, -50px) rotate(-10deg) scale(1.0, 1.0);
+
+}
+
+#petImg2{
+	-ms-transform:  translate(-300px, -200px) rotate(30deg) scale(0.80, 0.80); /* IE 9 */
+    -webkit-transform:  translate(-300px, -200px) rotate(30deg) scale(0.80, 0.80); /* Chrome, Safari, Opera */
+    transform:  translate(-300px, -200px) rotate(30deg) scale(0.80, 0.80);
+
+}
+
+
+.home-logo {
+    position: absolute;
+	left: 30%;
+
+	top: 20px;
+	height: auto;
+	max-width: 40%;
+
+	/*margin-left: -100px;*/
+	display: block;
+	;
+    text-align: center;
+}
+
+.home-logo span{
+    position: relative;
+    }
+
+/
+
+.home-btn > .btn {
+    background: #005955;
+    color: #ffffff;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.home-btn > .btn:hover{
+    background: #9a0000;
+
+
+}
+
+
+/* ---------------------------------------------- /*
+ * Footer
+/* ---------------------------------------------- */
+
+#footer {
+	font-size: 14px !important;
+	background: #222;
+	text-align: center;
+	padding: 10px 10px;
+	color: #FFF;
+	font-family: 'Josefin Slab', "Century Gothic", Times, sans-serif;
+}
+
+.copyright {
+	float: left;
+	font-weight: lighter;
+	color: rgba(255, 255, 255, .8);
+	display: inline-block;
+	padding-top: 20px;
+	padding-left: 10em;
+
+}
+
+.copyright a{
+    border-bottom: 1px dotted #fff;
+}
+
+.contact-info {
+	font-weight: lighter;
+	color: rgba(255, 255, 255, .8);
+	padding-top: 15px;
+
+}
+
+#footer span{
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    color: #ff5252;
+}
+
+/* ---------------------------------------------- /*
+ * Navigation
+/* ---------------------------------------------- */
+
+.header {
+	border-bottom: 1px solid #f5f5f5;
+	position: relative;
+	max-height: 50px;
+	width: 100%;
+	00;
+}
+
+.navbar-custom {
+	border: 0;
+	border-radius: 0;
+	margin: 0;
+
+	text-transform: capitalize;
+
+	font-family: 'Comfortaa', sans-serif;
+
+
+}
+
+.navbar-custom,
+.navbar-custom .dropdown-menu {
+	background: #fff;
+	padding: 0;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-nav > li > a,
+.navbar-custom .navbar-nav .dropdown-menu > li > a {
+	font-size: 11px;
+	letter-spacing: 2px;
+	color: #222;
+}
+
+
+
+.navbar-custom .nav li.active,
+.navbar-custom .nav li a:hover,
+.navbar-custom .nav li a:focus,
+.navbar-custom .navbar-nav > li.active a {
+	background: none;
+	outline: 0;
+	color: var(--darkblue);
+}
+
+.navbar-custom .navbar-brand {
+	/*font-weight: 700;*/
+	font-size: 22px;
+	font-family: 'Comfortaa', sans-serif;
+	text-transform: none;
+	letter-spacing: 3px;
+	font-weight: 700;
+	height: 20px; /* you can use % */
+    margin-top : 0px;
+    width: auto;
+    color: #A36C9C;
+
+}
+
+.navbar-custom .dropdown-menu {
+	border: 0;
+	border-top: 2px solid #005955;
+	border-radius: 0;
+}
+
+.navbar-custom .dropdown-menu > li > a {
+	padding: 10px 20px;
+}
+
+.navbar-custom .nav .open > a,
+.navbar-custom .dropdown-menu > li > a:hover,
+.navbar-custom .dropdown-menu > li > a:focus {
+	background: #f5f5f5;
+}
+
+.navbar-custom .navbar-toggle .icon-bar {
+	background: #222;
+}
+
+
+
+
+/*-----------------------*/
+/***** Services *****/
+/*-----------------------*/
+.info-header{
+	padding-top: 56px;
+	border-bottom: 1px solid black;
+	background-color: var(--lightgray);
+  height: 96px;
+}
+
+.adoption-info {
+	font-family: 'Comfortaa';
+  font-size: 26px;
+  font-weight: bold;
+  color: var(--darkblue);
+	padding-left: 10px;
+}
+
+#filler-rect{
+	position: absolute;
+	width: 120%;
+	height: 150px;
+	background: white;
+	-ms-transform:  translate(0px, -120px); /* IE 9 */
+    -webkit-transform:  translate(0px, -120px); /* Chrome, Safari, Opera */
+    transform:  translate(0px, -120px);
+
+}
+.adoption-steps{
+	margin: 0px 40px;
+
+}
+.adoption-step{
+	background-color: #fff;
+	border-left: 1px solid #000;
+	display: table-cell;
+	text-align: left;
+}
+
+.adoption-step h2{
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.adoption-step-title{
+	text-align: center;
+}
+
+.adoption-step-text{
+	padding-top: 10px;
+	/*padding-left: 15%;*/
+	padding-bottom: 10px;
+	font-family: 'Comfortaa', "Century Gothic", Times, sans-serif;
+	font-style: normal;
+	font-size: 18px;
+}
+
+.adoption-step-btn {
+	text-align: center;
+	padding-right: 30%;
+	padding-left: 30%;
+}
+
+
+.adoption-step-title {
+	text-transform: capitalize;
+	margin: 0 0 15px;
+	padding: 0;
+
+}
